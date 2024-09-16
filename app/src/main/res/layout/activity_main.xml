@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Campo de texto para el usuario -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Campo de texto para la contraseña -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_below="@id/etUsername"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón de Cancelar -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/etPassword"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Botón de Iniciar -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:layout_toEndOf="@id/btnCancel"
+        android:layout_alignBaseline="@id/btnCancel"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
